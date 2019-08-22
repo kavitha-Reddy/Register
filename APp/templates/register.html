@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+        h1{
+            color:orangered;
+        }
+        body{
+            background:url("https://image.shutterstock.com/image-photo/applicant-filling-business-company-application-600w-578134666.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+.kavi{
+    border-radius: 25px;
+    height: 50px;
+    width: 100px;
+    font-size: 1em;
+    font-style: bold;
+    color: blue;
+}
+        p{
+            color:purple;
+        }
+        </style>
+    </head>
+    <body>
+        <form method='POST'>
+            {%csrf_token%}
+            <table align="center" bgcolor="yellow">
+            <h1><center>Registration Form</center></h1>
+       <center> {{form.as_p}}</center>
+<p><center><input  class="kavi"type='submit' value="Register"></center></p>
+</table>
+</form>
+    </body>
+</html>
